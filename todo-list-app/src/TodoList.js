@@ -13,20 +13,14 @@ class TodoList extends Component {
         this.doneTodo = this.doneTodo.bind(this)
     }
 
-     loadHarryTodo() {
-         fetch('/json/todo.json').then(response => {
-             return response.json()
-         }).then(res =>{
-             this.setState({list: res})
-         })
+    loadHarryTodo() {
+        fetch('/json/todo.json').then(response => {return response.json()})
+        .then(res =>{this.setState({list: res})})
     }
 
     loadFarbodTodo() {
-        fetch('/json/todo_farbod.json').then(response => {
-            return response.json()
-        }).then(res =>{
-            this.setState({list: res})
-        })
+        fetch('/json/todo_farbod.json').then(response => {return response.json()})
+        .then(res =>{this.setState({list: res})})
     }
 
     componentDidMount(){

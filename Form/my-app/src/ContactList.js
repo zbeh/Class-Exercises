@@ -15,19 +15,19 @@ export default class ContactList extends Component {
           </thead>
           
           <tbody className='text-center'>
-          {console.log(this.props.list)} 
-           {this.props.list.map((person,id)=>{
-            return(
-              <tr key={id}>
-               <td>{person.first}</td>
-               <td>{person.last}</td>
-               <td>{person.email}</td>
-               <td>{person.phone}</td>
-              </tr>
-            )
+            {console.log(this.props.list)} 
+            {this.props.list.map((person,id)=>{
+              return(
+                <tr key={id}>
+                  <td>{person.first}</td>
+                  <td>{person.last}</td>
+                  <td>{person.email}</td>
+                  <td>{person.phone}</td>
+                </tr>
+              ) 
             })}
-         </tbody>
-       </Table>
+          </tbody>
+        </Table>
       </div>
     )
   }

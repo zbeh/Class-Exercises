@@ -5,10 +5,10 @@ import ContactList from './ContactList'
 class App extends Component {
   constructor(props){
     super(props)
-     this.state={
-       contacts:[]
-     }
-     this.handelContactsend = this.handelContactsend.bind(this)
+    this.state={
+      contacts:[]
+    }
+    this.handelContactsend = this.handelContactsend.bind(this)
   }
   
   handelContactsend(contactobj){
